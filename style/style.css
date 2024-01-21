@@ -1,0 +1,57 @@
+/* html {
+    background-color:rgb(42, 42, 42);
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+} */
+
+
+.title {
+    background-color:rgba(200, 197, 197, 0.739);
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    font-family: moria-citadel;
+}
+
+#intro-para {
+    color:antiquewhite;
+    font-size: 1.5rem;
+    border: ridge;
+    border-width: 10px;
+    border-color:rgb(46, 17, 4);
+    padding: 8px;
+    background-image: url("../images/wood-background.webp");
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+.container{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:space-between;
+ padding: 10px;
+}
+
+.container .image-border{
+    position: relative;
+    height: max-content;
+    width:max-content;
+    text-align: center;
+    position:relative;
+    border: 1px solid darkgrey;
+    background-color: white;
+    padding: 15px 15px 60px 15px;
+    box-shadow: 5px 10px 10px black;
+}
+
+.container .image-border:after{
+    content: attr(caption);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+}
